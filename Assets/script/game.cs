@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 /*coi ban co nhu 1 mang 2 chieu co kich thuoc 8x8,
@@ -79,6 +80,18 @@ public class gamecontrol : MonoBehaviour
         positions[x, y] = null;
     }
 
+    public GameObject GetPosition(int x,int y)
+    {
+       return positions[x,y];
+    }
+    
+
+    public bool PositionsBoard(int x, int y)
+    {
+
+        if(x<0|| y < 0||x>=positions.GetLength(0)||y>=positions.GetLength(1)) return false;
+        return true;
+    }
 
 
 
