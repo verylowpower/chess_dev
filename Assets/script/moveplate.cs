@@ -38,7 +38,29 @@ public class moveplate : MonoBehaviour
         controller.GetComponent<gamecontrol>().Emptyposition(reference.GetComponent<chess>().GetXboard(),
                                                              reference.GetComponent<chess>().GetYBoard());
 
+        reference.GetComponent<chess>().SetXboard(plateX);
+        reference.GetComponent<chess>().SetYboard(plateY);
+        reference.GetComponent<chess>().SetCoords();
+
+        controller.GetComponent<gamecontrol>().SetPosition(reference);
+
+        reference.GetComponent<chess>().DestroyMovePlate();
     }
 
+    public void SetCoords(int x,int y) //xac dinh toa do cua con tro
+    {
+        plateX = x; 
+        plateY = y;
+    }
+
+    public void SetReference(GameObject obj) 
+    {
+        obj = reference; //khai bao reference la 1 gameobject
+    }
+
+    public GameObject GetReference()
+    {
+        return reference;
+    }
 
 }
