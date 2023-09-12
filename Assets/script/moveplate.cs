@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +12,7 @@ public class moveplate : MonoBehaviour
     int plateX;
     int plateY;
 
+    //false=di chuyển, true=tấn công
     public bool attack = false;
 
     //khi an 1 quan co thi plate se doi mau
@@ -55,7 +56,7 @@ public class moveplate : MonoBehaviour
 
     public void SetReference(GameObject obj) 
     {
-        obj = reference; //khai bao reference la 1 gameobject
+        reference = obj ; //khai bao reference la 1 gameobject
     }
 
     public GameObject GetReference()

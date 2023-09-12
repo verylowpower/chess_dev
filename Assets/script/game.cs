@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
@@ -70,7 +70,8 @@ public class gamecontrol : MonoBehaviour
     {
         chess cm= obj.GetComponent<chess>();
 
-        positions[cm.GetXboard(), cm.GetXboard()] = obj; //dam bao rang cac quan co o vi tri cua no tren ban co
+        //đè quân lên khoảng trống hay bất cứ cái đ gì ở trong đấy
+        positions[cm.GetXboard(), cm.GetXboard()] = obj;
 
     }
     

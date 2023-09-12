@@ -62,41 +62,53 @@ public class chess : MonoBehaviour
         {
             case "black_queen":
                 this.GetComponent<SpriteRenderer>().sprite = black.queen;
+                player = "black";
                 break;
             case "black_king":
                 this.GetComponent<SpriteRenderer>().sprite = black.king;
+                player = "black";
                 break;
             case "black_knight":
                 this.GetComponent<SpriteRenderer>().sprite = black.knight;
+                player = "black";
                 break;
             case "black_bishop":
                 this.GetComponent<SpriteRenderer>().sprite = black.bishop;
+                player = "black";
                 break;
             case "black_pawn":
                 this.GetComponent<SpriteRenderer>().sprite = black.pawn;
+                player = "black";
                 break;
             case "black_rook":
                 this.GetComponent<SpriteRenderer>().sprite = black.rook;
+                player = "black";
                 break;
 
 
             case "white_queen":
                 this.GetComponent<SpriteRenderer>().sprite = white.queen;
+                player = "white";
                 break;
             case "white_king":
                 this.GetComponent<SpriteRenderer>().sprite = white.king;
+                player = "white";
                 break;
             case "white_knight":
                 this.GetComponent<SpriteRenderer>().sprite = white.knight;
+                player = "white";
                 break;
             case "white_bishop":
                 this.GetComponent<SpriteRenderer>().sprite = white.bishop;
+                player = "white";
                 break;
             case "white_pawn":
                 this.GetComponent<SpriteRenderer>().sprite = white.pawn;
+                player = "white";
                 break;
             case "white_rook":
                 this.GetComponent<SpriteRenderer>().sprite = white.rook;
+                player = "white";
                 break;
         }
     }
